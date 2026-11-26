@@ -12,6 +12,10 @@
 #define max_threads 15
 #define max_capacity 10
 
+// Array for max, allocated and available resources
+int max[max_threads][max_capacity];
+int allocated[max_threads][max_capacity];
+int avail[max_threads][max_capacity];
 void is_safe() {
 	/*Checks if the process request is in a safe state.
 	Then moves to the bankers_algo function to complete the request going back to main.*/
